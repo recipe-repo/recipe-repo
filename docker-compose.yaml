@@ -1,0 +1,34 @@
+version: '3'
+services:
+  web:
+    image: tomfrench/reciperepo-web
+    ports:
+      - 3663:80
+    environment:
+      API_URL: http://localhost:3664
+    depends_on:
+      - api
+
+  api:
+    image: tomfrench/reciperepo-api
+    environment:
+      DATABASE_HOST: mongodb://mongo
+      DATABASE_NAME: recipes
+      DATABASE_USER: root
+      DATABASE_PW: defaultpassword
+    ports: # Currently needed until api calls are proxied through webapp
+     - 3664:3664
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    volumes:
+      - db:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: recipes
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: defaultpassword
+
+volumes:
+  db:
