@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: tomfrench/reciperepo-web
+    image: reciperepo/reciperepo-web
     ports:
       - 3663:80
     environment:
@@ -10,7 +10,7 @@ services:
       - api
 
   api:
-    image: tomfrench/reciperepo-api
+    image: reciperepo/reciperepo-api
     environment:
       DATABASE_HOST: mongodb://mongo
       DATABASE_NAME: recipes
