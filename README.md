@@ -20,12 +20,12 @@ Recipe-Repo currently has no form of authentication on the frontend. Do not make
 In the current version you can:
 
 - Create and view recipes
+- Edit and delete recipes
 
 ### Roadmap
 
 There's currently plans to allow:
 
-- Editing recipes.
 - Making shopping lists (exporting lists to Trello/etc.)
 - Automated recipe imports
 - Searching for recipes by name/ingredients/etc.
