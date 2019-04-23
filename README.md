@@ -21,6 +21,7 @@ In the current version you can:
 
 - Create and view recipes
 - Edit and delete recipes
+- Import and export recipes as json files
 
 ### Roadmap
 
