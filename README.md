@@ -28,6 +28,7 @@ In the current version you can:
 
 There's currently plans to allow:
 
+- Multi-image support
 - Making shopping lists (exporting lists to Trello/etc.)
 - Searching for recipes by name/ingredients/etc.
 - Share recipes by email/etc.
