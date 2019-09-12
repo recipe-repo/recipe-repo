@@ -19,15 +19,16 @@ Recipe-Repo currently has no form of authentication on the frontend. Do not make
 
 In the current version you can:
 
-- Create and view recipes
-- Edit and delete recipes
+- Create, view, edit and delete recipes
+- Import and export recipes as json files
+- Automated recipe imports
 
 ### Roadmap
 
 There's currently plans to allow:
 
+- Multi-image support
 - Making shopping lists (exporting lists to Trello/etc.)
-- Automated recipe imports
 - Searching for recipes by name/ingredients/etc.
 - Share recipes by email/etc.
 
